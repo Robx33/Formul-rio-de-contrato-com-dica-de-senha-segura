@@ -5,8 +5,9 @@ const generatedPassword = document.querySelector('#generated-password')
 
 // Funções
 
+
 const getLetterLowerCase = () => {
-   return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
+   return String.fromCharCode(Math.floor(Math.random() * 26) + 97) // Baseado na tabela ascii do javascript
 }
 
 const getLetterUpperCase = () => {
@@ -61,3 +62,4 @@ generatePasswordButton.addEventListener("click", () => {
         getNumber, 
         getSymbol)
 })
+
